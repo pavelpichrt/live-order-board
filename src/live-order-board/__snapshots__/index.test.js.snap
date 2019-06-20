@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LiveOrderBoard cancelOrder calls priceTree.removeQuantity once, with correct arguments when the order exists 1`] = `
+Array [
+  35,
+  6.1,
+]
+`;
+
+exports[`LiveOrderBoard registerOrder calls \`priceTree.addQuantity\` once, with correct arguments 1`] = `
+Array [
+  35,
+  6.1,
+]
+`;

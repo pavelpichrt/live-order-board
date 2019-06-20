@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PriceTree sorted in ASCENDING order getOrderedValues addQuantity aggregates quantities at DIFFERENT prices correctly 1`] = `
+Array [
+  Object {
+    "price": 55.8,
+    "quantity": 13.5,
+  },
+  Object {
+    "price": 69,
+    "quantity": 6.4,
+  },
+  Object {
+    "price": 76.1,
+    "quantity": 5.88,
+  },
+  Object {
+    "price": 323.77,
+    "quantity": 4.2,
+  },
+]
+`;
+
+exports[`PriceTree sorted in ASCENDING order getOrderedValues addQuantity aggregates quantities correctly with multiple quantities at the SAME price 1`] = `
+Array [
+  Object {
+    "price": 55.8,
+    "quantity": 27,
+  },
+  Object {
+    "price": 69,
+    "quantity": 6.4,
+  },
+  Object {
+    "price": 76.1,
+    "quantity": 5.88,
+  },
+  Object {
+    "price": 323.77,
+    "quantity": 8.4,
+  },
+]
+`;
+
+exports[`PriceTree sorted in ASCENDING order getOrderedValues removeQuantity removes the price when the remaining quantity is 0 1`] = `
+Array [
+  Object {
+    "price": 69,
+    "quantity": 6.4,
+  },
+  Object {
+    "price": 76.1,
+    "quantity": 5.88,
+  },
+  Object {
+    "price": 323.77,
+    "quantity": 4.2,
+  },
+]
+`;
+
+exports[`PriceTree sorted in ASCENDING order getOrderedValues removeQuantity when the remaining quantity is greater than 0 decreases the quantity for a price correctly 1`] = `
+Array [
+  Object {
+    "price": 55.8,
+    "quantity": 13.5,
+  },
+  Object {
+    "price": 69,
+    "quantity": 6.4,
+  },
+  Object {
+    "price": 76.1,
+    "quantity": 5.88,
+  },
+  Object {
+    "price": 323.77,
+    "quantity": 8.4,
+  },
+]
+`;
+
+exports[`PriceTree sorted in DESCENDING order getOrderedValues addQuantity aggregates quantities at DIFFERENT prices correctly 1`] = `
+Array [
+  Object {
+    "price": 323.77,
+    "quantity": 4.2,
+  },
+  Object {
+    "price": 76.1,
+    "quantity": 5.88,
+  },
+  Object {
+    "price": 69,
+    "quantity": 6.4,
+  },
+  Object {
+    "price": 55.8,
+    "quantity": 13.5,
+  },
+]
+`;
+
+exports[`PriceTree sorted in DESCENDING order getOrderedValues addQuantity aggregates quantities correctly with multiple quantities at the SAME price 1`] = `
+Array [
+  Object {
+    "price": 323.77,
+    "quantity": 8.4,
+  },
+  Object {
+    "price": 76.1,
+    "quantity": 5.88,
+  },
+  Object {
+    "price": 69,
+    "quantity": 6.4,
+  },
+  Object {
+    "price": 55.8,
+    "quantity": 27,
+  },
+]
+`;
+
+exports[`PriceTree sorted in DESCENDING order getOrderedValues removeQuantity removes the price when the remaining quantity is 0 1`] = `
+Array [
+  Object {
+    "price": 323.77,
+    "quantity": 4.2,
+  },
+  Object {
+    "price": 76.1,
+    "quantity": 5.88,
+  },
+  Object {
+    "price": 69,
+    "quantity": 6.4,
+  },
+]
+`;
+
+exports[`PriceTree sorted in DESCENDING order getOrderedValues removeQuantity when the remaining quantity is greater than 0 decreases the quantity for a price correctly 1`] = `
+Array [
+  Object {
+    "price": 323.77,
+    "quantity": 8.4,
+  },
+  Object {
+    "price": 76.1,
+    "quantity": 5.88,
+  },
+  Object {
+    "price": 69,
+    "quantity": 6.4,
+  },
+  Object {
+    "price": 55.8,
+    "quantity": 13.5,
+  },
+]
+`;

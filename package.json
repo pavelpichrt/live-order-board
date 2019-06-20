@@ -1,0 +1,28 @@
+{
+  "name": "live-order-board",
+  "version": "0.0.1",
+  "description": "Test implementation of a Live order board",
+  "main": "./src/live-order-board/index.js",
+  "bundle": "./dist/bundle.js",
+  "scripts": {
+    "test": "jest",
+    "codestyle": "npx prettier --write 'src/**/*.js'",
+    "prepare": "webpack -p",
+    "lint": "npx eslint src"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "avl": "^1.4.4",
+    "nanoid": "^2.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.4"
+  }
+}
